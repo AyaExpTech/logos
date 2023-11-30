@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px"
+    width="100%" height="100%" viewBox="0 0 2000 2000" xml:space="preserve">
+    <!-- ==== フォント読み込み設定 ==== -->
+    <defs>
+        <style>
+            <![CDATA[
+            @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+            ]]>
+            .a
+            {}
+        </style>
+    </defs>
+    <!-- ==== このファイル自体で全体を描画するための記述 ==== -->
+    <use xlink:href="#all"></use>
+    <!-- ==== useで全体を読み込めるようにするための記述 ==== -->
+    <symbol viewbox="0 0 2000 2000" id="all">
+        <use xlink:href="#background" fill="#e4e4f1"></use>
+        <use xlink:href="#elements" fill="#434384"></use>
+    </symbol>
+    <!-- ==== パーツ別で読み込めるようにするための記述 ==== -->
+    <symbol viewBox="0 0 2000 2000" id="background">
+        <rect x="0" y="0" width="2000" height="2000" rx="128" ry="128" />
+    </symbol>
+    <symbol viewbox="0 0 2000 2000" id="elements">
+        <use xlink:href="#text-input"></use>
+        <use xlink:href="#nonverbal"></use>
+    </symbol>
+    <symbol viewbox="0 0 2000 2000" id="text-input">
+        <path fill="#f440" opacity="1.000000" stroke="none" d="M 520 700 H 1480 V 860 H 520 z" />
+        <text x="1000" y="786" text-anchor="middle" dominant-baseline="middle" font-family="Ubuntu"
+            font-size="160px">Ayasaka-Koto</text>
+        <!-- 6px下にずらしてるのは、上下揃えをmiddleに設定してももとから上にずれてるから。 -->
+    </symbol>
+    <symbol viewbox="0 0 2000 2000" id="nonverbal">
+        <use xlink:href="#frame"></use>
+        <use xlink:href="#window"></use>
+        <use xlink:href="#console"></use>
+    </symbol>
+    <symbol viewBox="0 0 2000 2000" id="frame">
+        <path opacity="1.000000" stroke="none"
+            d="M 1000 60 L 1940 1000 L 1000 1940 L 1000 1920 L 1920 1000 L 1000 80 z" />
+        <!-- 外側のひし形の右半分 -->
+        <path opacity="1.000000" stroke="none" d="M 1000 60 L 60 1000 L 1000 1940 L 1000 1920 L 80 1000 L 1000 80 z" />
+        <!-- 外側のひし形の左半分 -->
+        <path opacity="1.000000" stroke="none" d="M 530 991.5 L 1470 991.5 L 1470 1007.5 L 530 1007.5 z" />
+        <!-- 真ん中の横線 -->
+        <circle cx="1000" cy="240" r="36" />
+        <circle cx="1000" cy="1760" r="36" /> <!-- 上下の円 -->
+    </symbol>
+    <symbol viewBox="0 0 2000 2000" id="window">
+        <path opacity="1.000000" stroke="none" d="M 800 1154 V 1480 H 817 V 1205 H 1183 V 1188 H 817 V 1154 z" />
+        <!-- コマンドウィンドウ左側├ -->
+        <path opacity="1.000000" stroke="none" d="M 817 1463 V 1480 H 1200 V 1154 H 1183 V 1463 z" />
+        <!-- コマンドウィンドウ右下┘ -->
+        <path opacity="1.000000" stroke="none"
+            d="M 800 1154 C 800 1135.3, 815.3 1120, 834 1120 V 1137 C 824.7 1137, 817 1144.7, 817 1154 z" />
+        <!-- コマンドウィンドウ左上╭ -->
+        <path opacity="1.000000" stroke="none"
+            d="M 1166 1120 C 1185.7 1120, 1200 1135.3, 1200 1154 H 1183 C 1183 1144.7, 1175.3 1137, 1166 1137 z" />
+        <!-- コマンドウィンドウ右上╮ -->
+        <path opacity="1.000000" stroke="none" d="M 834 1120 H 1166 V 1137 H 834 z" /> <!-- コマンドウィンドウ最上─ -->
+    </symbol>
+    <symbol viewBox="0 0 2000 2000" id="console">
+        <path opacity="1.000000" stroke="none" d="M 1018 1255 H 1035 L 982 1413 H 965 z" /> <!-- コマンドウィンドウ / -->
+        <path opacity="1.000000" stroke="none"
+            d="M 955 1308 L 885 1334 L 955 1360 L 947 1375 L 868 1345 V 1323 L 947 1293 z" /> <!-- コマンドウィンドウ < -->
+        <path opacity="1.000000" stroke="none"
+            d="M 1045 1308 L 1115 1334 L 1045 1360 L 1053 1375 L 1132 1345 V 1323 L 1053 1293 z" /> <!-- コマンドウィンドウ > -->
+    </symbol>
+</svg>

@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px"
+    width="100%" height="100%" viewBox="0 0 2000 2000" xml:space="preserve">
+    <!-- ==== このファイル自体で全体を描画するための記述 ==== -->
+    <use xlink:href="#all"></use>
+    <!-- ==== useで全体を読み込めるようにするための記述 ==== -->
+    <symbol viewbox="0 0 2000 2000" id="all">
+        <use xlink:href="#background" fill="#222244"></use>
+        <use xlink:href="#elements" fill="#e4e4f1"></use>
+    </symbol>
+    <!-- ==== パーツ別で読み込めるようにするための記述 ==== -->
+    <symbol viewBox="0 0 2000 2000" id="background">
+        <rect x="0" y="0" width="2000" height="2000" rx="128" ry="128" />
+    </symbol>
+    <symbol viewbox="0 0 2000 2000" id="elements">
+        <use xlink:href="#text"></use>
+        <use xlink:href="#nonverbal"></use>
+    </symbol>
+    <symbol viewbox="0 0 2000 2000" id="text">
+        <use xlink:href="#text-left"></use>
+        <use xlink:href="#text-right"></use>
+    </symbol>
+    <symbol viewbox="0 0 2000 2000" id="nonverbal">
+        <use xlink:href="#frame"></use>
+        <use xlink:href="#window"></use>
+        <use xlink:href="#console"></use>
+    </symbol>
+    <symbol viewBox="0 0 2000 2000" id="frame">
+        <path opacity="1.000000" stroke="none"
+            d="M 1000 60 L 1940 1000 L 1000 1940 L 1000 1920 L 1920 1000 L 1000 80 z" />
+        <!-- 外側のひし形の右半分 -->
+        <path opacity="1.000000" stroke="none" d="M 1000 60 L 60 1000 L 1000 1940 L 1000 1920 L 80 1000 L 1000 80 z" />
+        <!-- 外側のひし形の左半分 -->
+        <path opacity="1.000000" stroke="none" d="M 530 991.5 L 1470 991.5 L 1470 1007.5 L 530 1007.5 z" />
+        <!-- 真ん中の横線 -->
+        <circle cx="1000" cy="240" r="36" />
+        <circle cx="1000" cy="1760" r="36" /> <!-- 上下の円 -->
+    </symbol>
+    <symbol viewBox="0 0 2000 2000" id="window">
+        <path opacity="1.000000" stroke="none" d="M 800 1154 V 1480 H 817 V 1205 H 1183 V 1188 H 817 V 1154 z" />
+        <!-- コマンドウィンドウ左側├ -->
+        <path opacity="1.000000" stroke="none" d="M 817 1463 V 1480 H 1200 V 1154 H 1183 V 1463 z" />
+        <!-- コマンドウィンドウ右下┘ -->
+        <path opacity="1.000000" stroke="none"
+            d="M 800 1154 C 800 1135.3, 815.3 1120, 834 1120 V 1137 C 824.7 1137, 817 1144.7, 817 1154 z" />
+        <!-- コマンドウィンドウ左上╭ -->
+        <path opacity="1.000000" stroke="none"
+            d="M 1166 1120 C 1185.7 1120, 1200 1135.3, 1200 1154 H 1183 C 1183 1144.7, 1175.3 1137, 1166 1137 z" />
+        <!-- コマンドウィンドウ右上╮ -->
+        <path opacity="1.000000" stroke="none" d="M 834 1120 H 1166 V 1137 H 834 z" /> <!-- コマンドウィンドウ最上─ -->
+    </symbol>
+    <symbol viewBox="0 0 2000 2000" id="console">
+        <path opacity="1.000000" stroke="none" d="M 1018 1255 H 1035 L 982 1413 H 965 z" /> <!-- コマンドウィンドウ / -->
+        <path opacity="1.000000" stroke="none"
+            d="M 955 1308 L 885 1334 L 955 1360 L 947 1375 L 868 1345 V 1323 L 947 1293 z" /> <!-- コマンドウィンドウ < -->
+        <path opacity="1.000000" stroke="none"
+            d="M 1045 1308 L 1115 1334 L 1045 1360 L 1053 1375 L 1132 1345 V 1323 L 1053 1293 z" /> <!-- コマンドウィンドウ > -->
+    </symbol>
+    <symbol viewBox="0 0 2000 2000" id="text-left">
+        <!-- 左正位置 -->
+        <path opacity="1.000000" stroke="none" d="M 540 860 V 772 H 620 V 860 H 604 V 788 H 556 V 860 z" />
+        <!-- Aの下、Hの上 -->
+        <path opacity="1.000000" stroke="none" d="M 540 772 Q 540 710 563 700 H 578 Q 556 698 556 772 z" />
+        <!-- Aの左上、Hの右下 -->
+        <path opacity="1.000000" stroke="none" d="M 620 772 Q 620 710 597 700 H 582 Q 604 698 604 772 z" />
+        <!-- Aの右上、Hの左下 -->
+        <path opacity="1.000000" stroke="none" d="M 630 700 A 58 80 0 0 1 630 860 V 844 A 42 64 0 0 0 630 716 z" />
+        <!-- Yの左、C -->
+        <path opacity="1.000000" stroke="none" d="M 672 780 Q 672 713 718 700 V 716 Q 688 738 688 780 z" />
+        <!-- Yの右上 -->
+        <path opacity="1.000000" stroke="none" d="M 760 700 L 720 860 H 704 L 744 700 z" /> <!-- Aの左斜線、Eの縦線 -->
+        <path opacity="1.000000" stroke="none" d="M 722 700 H 760 L 750 716 H 722 z" /> <!-- Eの下線 -->
+        <path opacity="1.000000" stroke="none" d="M 700 772 H 775 V 788 H 700 z" /> <!-- Aの中線、Eの中線 -->
+        <path opacity="1.000000" stroke="none" d="M 680 844 H 720 L 720 860 H 680 z" /> <!-- Eの上線 -->
+        <path opacity="1.000000" stroke="none" d="M 770 844 H 850 V 860 H 770 z" /> <!-- Tの上線 -->
+        <path opacity="1.000000" stroke="none" d="M 774 700 H 790 L 818 860 H 802 z" /> <!-- Aの右斜線、Tの縦線 -->
+        <path opacity="1.000000" stroke="none" d="M 870 700 L 902 860 H 918 L 886 700 z" /> <!-- Eの縦線、Pの縦線 -->
+        <path opacity="1.000000" stroke="none" d="M 890 772 A 48 44 0 0 0 890 860 V 844 A 32 28 0 0 1 890 788 z" />
+        <!-- Pのカーブ -->
+        <path opacity="1.000000" stroke="none" d="M 870 700 H 916 V 716 H 886 z" /> <!-- Eの上線 -->
+        <path opacity="1.000000" stroke="none" d="M 890 772 H 936 V 788 H 898 z" /> <!-- Eの中線 -->
+        <path opacity="1.000000" stroke="none" d="M 890 844 H 956 V 860 H 890 z" /> <!-- Eの下線 -->
+        <path opacity="1.000000" stroke="none" d="M 976 700 L 1008 780 H 992 L 960 700 z" /> <!-- Xの左上/右下 -->
+        <path opacity="1.000000" stroke="none" d="M 976 860 L 1008 780 H 992 L 960 860 z" /> <!-- Xの左下/右上 -->
+    </symbol>
+    <symbol viewBox="0 0 2000 2000" id="text-right">
+        <use xlink:href="#text-left" transform="rotate(180, 1000, 780)"></use>
+    </symbol>
+</svg>
